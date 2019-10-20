@@ -1,0 +1,10 @@
+
+'ecardgreeting' has been registered.
+
+//Client Side
+Use this site key in the HTML code your site serves to users.
+6LcDK7wUAAAAAEd8QFA8QdpfbeHZJZYOIjzSxGkN
+
+//Server Side
+Use this secret key for communication between your site and reCAPTCHA.
+6LcDK7wUAAAAAJzv-JEvTHByXKmIY9uEpIdc2ckX

@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>eGreeting Card | Halloween</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- GOOGLE FONT LIBRARY -->
+    <!-- Font Creepster -->
+    <link href="https://fonts.googleapis.com/css?family=Creepster&display=swap" rel="stylesheet">
+    <!-- FONTAWESOME LIBRARY -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="/css/stylesheet.css">
+</head>
+<body>
+    <!--Header top of card-->
+    <header>
+        <h1>Send a Halloween eGreeting Card to friends, <br />family, or work colleages...</h1>
+    </header>
+    <!--Brings content from Index.cshtml-->
+    @RenderBody()
+
+    <!--jQuery and Bootstrap libraries-->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/assets/js/vendor/popper.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

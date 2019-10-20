@@ -1,0 +1,78 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "eGreeting Card";
+    ViewBag.meta_keywords = "electronic card, electronic greeting, card, greeting, electronic";
+    ViewBag.meta_desc = "Send an electronic greeting to a loved one - family, friends, work colleagues";
+}
+<!--The Form-->
+<div class="container-fluid">
+    <div class="card">
+        <div class="card-header">
+            <p>Please fill out the following fields:</p>
+        </div>
+        <div class="card-body">
+            <form method="post">
+                <div class="form-group">
+                    <!--Recipient's Information-->
+                    @*<label asp-for="@Model.recipientname">Recipient's Name: </label>
+                        <span asp-validation-for="@Model.recipientname" class="text-danger"></span>
+                        <input asp-for="@Model.recipientname" type="text" class="form-control" />*@
+                    <label>Recipient's Name: </label>
+                    <input type="text" class="form-control" />
+                </div>
+                <div class="form-group">
+                    @*<label asp-for="@Model.recipientemail">Recipient's Email: </label>
+                            <span asp-validation-for=" @Model.recipientemail" class="text-danger">
+                            </span>
+                        <input asp-for="@Model.recipientemail" type="email" class="form-control" />*@
+                    <label>Recipient's Email: </label>
+                    <input type="email" class="form-control" />
+                </div>
+                <!--Sender's Information-->
+                <div class="form-group">
+                    @*<label asp-for="@Model.sendername">Sender's Name: </label>
+                        <span asp-validation-for=" @Model.sendername" class="text-danger">
+                        </span>
+                        <input asp-for="@Model.sendername" type="text" class="form-control" />*@
+                    <label>Sender's Name: </label>
+                    <input type="text" class="form-control" />
+                </div>
+                <div class="form-group">
+                    @*<label asp-for="@Model.senderemail">Sender's Email: </label>
+                        <span asp-validation-for=" @Model.senderemail" class="text-danger">
+                        </span>
+                        <input asp-for="@Model.senderemail" type="email" class="form-control" />*@
+                    <label>Sender's Email: </label>
+                    <input type="email" class="form-control" />
+                </div>
+                <!--Greeting Subject-->
+                <div class="form-group">
+                    @*<label asp-for="@Model.subject">Subject: </label>
+                        <span asp-validation-for=" @Model.subject" class="text-danger">
+                        </span>
+                        <input asp-for="@Model.subject" type="text" class="form-control" />*@
+                    <label>Subject: </label>
+                    <input type="text" class="form-control" />
+                </div>
+                <div class="form-group">
+                    @*<label asp-for="@Model.message">Message: </label>
+                        <textarea asp-for="@Model.message" maxlength="100" class="form-control"></textarea>*@
+                    <label>Message: </label>
+                    <textarea maxlength="250" class="form-control"></textarea>
+                </div>
+                <!--Buttons for Preview and Clear Screen-->
+                <div class="form-group">
+                    <input type="button" value="Preview" />
+                </div>
+                <div class="form-group">
+                    <input type="button" value="Reset" />
+                </div>
+                <!--Recaptcha Client Key-->
+                @*<div class="form-group">
+                    <div class="g-recaptcha" data-sitekey="6LcDK7wUAAAAAEd8QFA8QdpfbeHZJZYOIjzSxGkN"></div>
+                    <span asp-validation-for="@Model.reCaptcha" class="text-danger"></span>*@
+            </form>
+        </div>
+    </div>
+</div>
